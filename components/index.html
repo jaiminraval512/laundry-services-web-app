@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Washly | Freshness you can feel.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ***************** NAV ******************* -->
+
+  <nav>
+    <div class="left">
+      <a href="#"><img src="/assets/logo.png" alt="Washly" /></a>
+    </div>
+    <div class="right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="profile-area">
+      <button id="profile">
+        <i class="fa-solid fa-user" style="color: rgb(255, 255, 255)"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- ***************** MAIN ******************* -->
+
+  <div id="grid-layout">
+    <main>
+      <div class="left">
+        <h1 id="heading">Fresh Clothes Zero Hassle Every Time</h1>
+        <p>
+          <strong>Deep cleaning for comforters, curtains, and heavy linens that
+            won't fit in a standard machine.
+          </strong>
+        </p>
+        <a href="#service">
+          <button>
+            Book a service now
+            <i class="fa-solid fa-angles-right" style="color: rgb(255, 255, 255)"></i>
+          </button>
+        </a>
+      </div>
+      <div class="right">
+        <img src="/assets/hero-img.png" alt="img" />
+      </div>
+    </main>
+    <div id="dot"></div>
+  </div>
+
+  <!-- service overview sec -->
+
+  <section id="achievements">
+    <div class="container">
+      <div class="card">
+        <span><i class="fa-solid fa-map-location fa-2xl" style="color: rgb(0, 0, 0)"></i></span>
+        <h2>15+</h2>
+        <p>Laundry Services</p>
+      </div>
+
+      <div class="card">
+        <span><i class="fa-regular fa-face-grin fa-2xl" style="color: rgb(0, 0, 0)"></i></span>
+        <h2>240+</h2>
+        <p>Happy Customers</p>
+      </div>
+      <div class="card">
+        <span><i class="fa-solid fa-award fa-2xl" style="color: rgb(0, 0, 0)"></i></span>
+        <h2>2+</h2>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="service">
+    <div class="headers">
+      <h1>Services</h1>
+    </div>
+
+    <section class="booking-section">
+      <div class="booking-container">
+        <div class="left-div services-column">
+          <h2>Select Services</h2>
+
+          <!-- ************ Service cards **************** -->
+
+          <div class="services-list">
+
+            <!-- <div class="service-item">
+                <div class="service-det">
+                  <img src="/assets/dry-clean.png" alt="dry-clean">
+                  <span class="item-name">Dry Cleaning</span>
+                  <span class="divide"></span>
+                  <span class="item-price"> <span>₹</span><span id="price">200</span></span>
+                </div>
+                <div class="service-action">
+                  <button class="btn">Add</button>
+                </div>
+              </div> -->
+
+          </div>
+
+          <div class="cart-info">
+            <p class="attention">
+              * Add items to the cart to proceed with booking.
+            </p>
+          </div>
+        </div>
+
+        <div class="right-div booking-column">
+          <div class="cart-summary-box">
+            <h3>Your Cart</h3>
+            <div class="cart-items">
+
+              <div class="header">
+                <span>No.</span><span>Service</span><span>Price</span>
+              </div>
+
+              <div class="items">
+
+
+
+                <!-- <div class="cart-item">
+
+                  <span class="item-no">1</span>
+                  <span class="item-name">Dry Cleaning</span>
+                  <span class="item-price"><span class="rs">₹</span>200</span>
+
+                </div> -->
+              </div>
+
+            </div>
+            <div class="cart-total">
+              <span>Total Amount:</span>
+              <span>₹<span class="total-price">0</span></span>
+            </div>
+          </div>
+
+          <div class="booking-form-box">
+            <h3>Book Now</h3>
+            <form class="booking-form">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required />
+              </div>
+
+              <button type="submit" class="btn-book-now">Book Now</button>
+            </form>
+            <div class="book-msg">Service booked ! E-Bill sended to your email id.</div>
+            <div class="book-err">Select at least one service to book !</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="service-description">
+      <div class="service-box">
+        <img src="/assets/premium-service.png" alt="service-1">
+        <h1>Premium Services</h1>
+        <p>
+          Elevate your warttrobe with our meticulous dry cleaning, ensuring garmerits look and feel as good as new</p>
+      </div>
+      <div class="service-box">
+        <img src="/assets/support.png" alt="service-2">
+        <h1>Quick Support</h1>
+        <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free</p>
+      </div>
+      <div class="service-box">
+        <img src="/assets/delevery.png" alt="service-1">
+        <h1>Hassle Free Delivery</h1>
+        <p>
+
+          Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+      </div>
+      <div class="service-box">
+        <img src="/assets/price.png" alt="service-1">
+        <h1>Affordable Pricess</h1>
+        <p>Experience exceptional care without breaking the bank - our affordable prices make laundry day stress-free</p>
+      </div>
+    </section>
+    <section id="news-letter">
+      <div class="news-letter-1">
+         <h1>Subscribe our news 
+          <br>letter.</h1>
+      </div>
+      <div class="news-letter-2">
+        <input type="text" placeholder="Full Name" class="inp">
+        <input type="email" placeholder="Email" class="inp">
+        <button class="inp">Submit</button>
+      </div>
+ </section>
+</section>
+  <footer>
+    <div class="about footer">
+      <img src="/assets/logo.png" alt="logo">
+      <h5>About us</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tempora.</p>
+    </div>
+    <div class="important-link footer">
+       <h5>important-link</h5>
+      <ul>
+       
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Privacy policy</li>
+        <li>Terms to use</li>
+        <li>Refund policy</li>
+      </ul>
+    </div>
+    <div class="contact footer">
+      <h5>Contact</h5>
+      <p>washly@gmail.com</p>
+      <p>+91 9123456780</p>
+    </div>
+    <div class="follow-us footer">
+      <h5>Follow us</h5>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
